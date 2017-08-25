@@ -14,6 +14,10 @@
 		4C09BF9D1F4F4F6A00421EA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C09BF9C1F4F4F6A00421EA7 /* Assets.xcassets */; };
 		4C09BFA01F4F4F6A00421EA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C09BF9E1F4F4F6A00421EA7 /* LaunchScreen.storyboard */; };
 		4C09BFA81F50E32F00421EA7 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C09BFA71F50E32F00421EA7 /* logo.png */; };
+		4C09BFAA1F50E91300421EA7 /* TPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C09BFA91F50E91300421EA7 /* TPViewController.swift */; };
+		4C09BFAC1F50E98200421EA7 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C09BFAB1F50E98200421EA7 /* GalleryViewController.swift */; };
+		4C09BFAE1F50E99D00421EA7 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C09BFAD1F50E99D00421EA7 /* ContactViewController.swift */; };
+		4C09BFB01F50E9AA00421EA7 /* PurposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C09BFAF1F50E9AA00421EA7 /* PurposeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		4C09BF9F1F4F4F6A00421EA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C09BFA11F4F4F6A00421EA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C09BFA71F50E32F00421EA7 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		4C09BFA91F50E91300421EA7 /* TPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPViewController.swift; sourceTree = "<group>"; };
+		4C09BFAB1F50E98200421EA7 /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		4C09BFAD1F50E99D00421EA7 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		4C09BFAF1F50E9AA00421EA7 /* PurposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurposeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,10 @@
 				4C09BF9E1F4F4F6A00421EA7 /* LaunchScreen.storyboard */,
 				4C09BFA11F4F4F6A00421EA7 /* Info.plist */,
 				4C09BF991F4F4F6A00421EA7 /* Lift4Life.xcdatamodeld */,
+				4C09BFA91F50E91300421EA7 /* TPViewController.swift */,
+				4C09BFAB1F50E98200421EA7 /* GalleryViewController.swift */,
+				4C09BFAD1F50E99D00421EA7 /* ContactViewController.swift */,
+				4C09BFAF1F50E9AA00421EA7 /* PurposeViewController.swift */,
 			);
 			path = Lift4Life;
 			sourceTree = "<group>";
@@ -144,9 +156,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C09BFAA1F50E91300421EA7 /* TPViewController.swift in Sources */,
 				4C09BF951F4F4F6A00421EA7 /* ViewController.swift in Sources */,
+				4C09BFAC1F50E98200421EA7 /* GalleryViewController.swift in Sources */,
+				4C09BFB01F50E9AA00421EA7 /* PurposeViewController.swift in Sources */,
 				4C09BF931F4F4F6A00421EA7 /* AppDelegate.swift in Sources */,
 				4C09BF9B1F4F4F6A00421EA7 /* Lift4Life.xcdatamodeld in Sources */,
+				4C09BFAE1F50E99D00421EA7 /* ContactViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
