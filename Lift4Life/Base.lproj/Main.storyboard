@@ -574,21 +574,8 @@ Cg
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4b3-8A-4vU">
-                                <rect key="frame" x="16" y="405" width="334" height="170"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">“This is my future and this is what I work toward every day. I WANT to continue as a strength and conditioning coach and influence the sports world immensely. I STRIVE to have a Strength and Conditioning organization that raises money toward cancer patients and other diseases overtime. I PUSH the athletes I coach to Lift and train, not just for themselves but to LIFT 4 LIFE.”
--Javier Hernandez II</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B08-73-vwc" userLabel="Javi_face">
-                                <rect key="frame" x="92" y="100" width="195" height="192"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rW-oV-pP3">
-                                <rect key="frame" x="65" y="286" width="249" height="95"/>
+                                <rect key="frame" x="74" y="343" width="249" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Javier Hernandez II
 COACH &amp; OWNER
@@ -597,8 +584,20 @@ Strength &amp; Conditioning Coach</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Head shot" translatesAutoresizingMaskIntoConstraints="NO" id="B08-73-vwc" userLabel="Javi_face">
+                                <rect key="frame" x="109" y="100" width="178" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4b3-8A-4vU">
+                                <rect key="frame" x="22" y="446" width="331" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86225843430000004" green="0.7229512334" blue="0.59602475170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">“This is my future and this is what I work toward every day. I WANT to continue as a strength and conditioning coach and influence the sports world immensely. I STRIVE to have a Strength and Conditioning organization that raises money toward cancer patients and other diseases overtime. I PUSH the athletes I coach to Lift and train, not just for themselves but to LIFT 4 LIFE.”</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.8622584342956543" green="0.72295123338699341" blue="0.59602475166320801" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="tS1-jj-o5c" appends="YES" id="PzH-ga-6op"/>
@@ -623,7 +622,7 @@ Strength &amp; Conditioning Coach</string>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1876" y="-304"/>
+            <point key="canvasLocation" x="1876" y="-304.4977511244378"/>
         </scene>
         <!--Training Program Screen-->
         <scene sceneID="Iea-eq-qjh">
@@ -633,7 +632,7 @@ Strength &amp; Conditioning Coach</string>
                         <viewControllerLayoutGuide type="top" id="UIc-YT-eBU"/>
                         <viewControllerLayoutGuide type="bottom" id="Oxx-Q8-wha"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="tNb-ta-ip3">
+                    <view key="view" contentMode="right" id="tNb-ta-ip3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -647,35 +646,59 @@ Strength &amp; Conditioning Coach</string>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kLp-Lk-FEM">
                                 <rect key="frame" x="191" y="434" width="134" height="127"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Lone Wolf"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Lone Wolf" backgroundImage="tpButton1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIr-Sz-Vlg">
                                 <rect key="frame" x="49" y="434" width="134" height="127"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Dream Team"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Dream Team" backgroundImage="tpButton1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vI6-aT-pIU">
                                 <rect key="frame" x="49" y="299" width="134" height="127"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="The Prodigy"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="The Prodigy" backgroundImage="tpButton1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qSo-BM-F2h">
                                 <rect key="frame" x="191" y="299" width="134" height="127"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="4th Quarter"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="4th Quarter" backgroundImage="tpButton1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHe-yi-fzK">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHe-yi-fzK">
                                 <rect key="frame" x="49" y="164" width="134" height="127"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Elite Athlete"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Elite Athlete" backgroundImage="tpButton1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="eliteAthletePressed:" destination="OZ9-dH-ygR" eventType="touchUpInside" id="5f4-6A-5Z8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QaA-VP-AaM">
                                 <rect key="frame" x="191" y="164" width="134" height="127"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="The Speedster"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="The Speedster" backgroundImage="tpButton1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TP_background" translatesAutoresizingMaskIntoConstraints="NO" id="gmz-eD-mM5">
+                                <rect key="frame" x="0.0" y="7" width="375" height="652"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="G5W-am-44d" appends="YES" id="Jqj-Hi-OWe"/>
@@ -689,7 +712,13 @@ Strength &amp; Conditioning Coach</string>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="FourthQuarter" destination="qSo-BM-F2h" id="TQn-Ss-8pE"/>
+                        <outlet property="dreamTeam" destination="SIr-Sz-Vlg" id="A8x-my-GJt"/>
+                        <outlet property="eliteAthlete" destination="aHe-yi-fzK" id="hBu-HV-ZdC"/>
+                        <outlet property="loneWolf" destination="kLp-Lk-FEM" id="d9F-ll-Wrh"/>
                         <outlet property="menuButton" destination="tqL-8D-fB4" id="20n-u3-En3"/>
+                        <outlet property="prodigy" destination="vI6-aT-pIU" id="ii4-dv-3gR"/>
+                        <outlet property="speedster" destination="QaA-VP-AaM" id="OEf-dJ-2dJ"/>
                         <outlet property="swipeGesture" destination="G5W-am-44d" id="vP6-vV-tQs"/>
                     </connections>
                 </viewController>
@@ -700,7 +729,7 @@ Strength &amp; Conditioning Coach</string>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1876" y="394"/>
+            <point key="canvasLocation" x="1876" y="393.55322338830587"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vU7-6Q-XF6">
@@ -794,8 +823,11 @@ Strength &amp; Conditioning Coach</string>
         </scene>
     </scenes>
     <resources>
+        <image name="Head shot" width="3276" height="5016"/>
+        <image name="TP_background" width="2028" height="1424"/>
         <image name="logo" width="444" height="420"/>
         <image name="menu" width="22" height="22"/>
+        <image name="tpButton1" width="150" height="150"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Uof-Mi-RH4"/>
