@@ -1,5 +1,5 @@
 //
-//  PurposeViewController.swift
+//  BioViewController.swift
 //  Lift4Life
 //
 //  Created by Michael Bi on 8/25/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PurposeViewController: UIViewController {
+class BioViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

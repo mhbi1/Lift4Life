@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4C09BF931F4F4F6A00421EA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C09BF921F4F4F6A00421EA7 /* AppDelegate.swift */; };
-		4C09BF951F4F4F6A00421EA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C09BF941F4F4F6A00421EA7 /* ViewController.swift */; };
+		4C09BF951F4F4F6A00421EA7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C09BF941F4F4F6A00421EA7 /* HomeViewController.swift */; };
 		4C09BF981F4F4F6A00421EA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C09BF961F4F4F6A00421EA7 /* Main.storyboard */; };
 		4C09BF9B1F4F4F6A00421EA7 /* Lift4Life.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C09BF991F4F4F6A00421EA7 /* Lift4Life.xcdatamodeld */; };
 		4C09BF9D1F4F4F6A00421EA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C09BF9C1F4F4F6A00421EA7 /* Assets.xcassets */; };
@@ -17,13 +17,13 @@
 		4C09BFAA1F50E91300421EA7 /* TPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C09BFA91F50E91300421EA7 /* TPViewController.swift */; };
 		4C09BFAC1F50E98200421EA7 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C09BFAB1F50E98200421EA7 /* GalleryViewController.swift */; };
 		4C09BFAE1F50E99D00421EA7 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C09BFAD1F50E99D00421EA7 /* ContactViewController.swift */; };
-		4C09BFB01F50E9AA00421EA7 /* PurposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C09BFAF1F50E9AA00421EA7 /* PurposeViewController.swift */; };
+		4C09BFB21F50F9CC00421EA7 /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C09BFB11F50F9CC00421EA7 /* BioViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4C09BF8F1F4F4F6A00421EA7 /* Lift4Life.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lift4Life.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C09BF921F4F4F6A00421EA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C09BF941F4F4F6A00421EA7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C09BF941F4F4F6A00421EA7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4C09BF971F4F4F6A00421EA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C09BF9A1F4F4F6A00421EA7 /* Lift4Life.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Lift4Life.xcdatamodel; sourceTree = "<group>"; };
 		4C09BF9C1F4F4F6A00421EA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -33,7 +33,7 @@
 		4C09BFA91F50E91300421EA7 /* TPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPViewController.swift; sourceTree = "<group>"; };
 		4C09BFAB1F50E98200421EA7 /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		4C09BFAD1F50E99D00421EA7 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
-		4C09BFAF1F50E9AA00421EA7 /* PurposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurposeViewController.swift; sourceTree = "<group>"; };
+		4C09BFB11F50F9CC00421EA7 /* BioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +50,7 @@
 		4C09BF861F4F4F6A00421EA7 = {
 			isa = PBXGroup;
 			children = (
+				4C09BFB11F50F9CC00421EA7 /* BioViewController.swift */,
 				4C09BF911F4F4F6A00421EA7 /* Lift4Life */,
 				4C09BF901F4F4F6A00421EA7 /* Products */,
 			);
@@ -68,7 +69,7 @@
 			children = (
 				4C09BFA71F50E32F00421EA7 /* logo.png */,
 				4C09BF921F4F4F6A00421EA7 /* AppDelegate.swift */,
-				4C09BF941F4F4F6A00421EA7 /* ViewController.swift */,
+				4C09BF941F4F4F6A00421EA7 /* HomeViewController.swift */,
 				4C09BF961F4F4F6A00421EA7 /* Main.storyboard */,
 				4C09BF9C1F4F4F6A00421EA7 /* Assets.xcassets */,
 				4C09BF9E1F4F4F6A00421EA7 /* LaunchScreen.storyboard */,
@@ -77,7 +78,6 @@
 				4C09BFA91F50E91300421EA7 /* TPViewController.swift */,
 				4C09BFAB1F50E98200421EA7 /* GalleryViewController.swift */,
 				4C09BFAD1F50E99D00421EA7 /* ContactViewController.swift */,
-				4C09BFAF1F50E9AA00421EA7 /* PurposeViewController.swift */,
 			);
 			path = Lift4Life;
 			sourceTree = "<group>";
@@ -156,10 +156,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C09BFB21F50F9CC00421EA7 /* BioViewController.swift in Sources */,
 				4C09BFAA1F50E91300421EA7 /* TPViewController.swift in Sources */,
-				4C09BF951F4F4F6A00421EA7 /* ViewController.swift in Sources */,
+				4C09BF951F4F4F6A00421EA7 /* HomeViewController.swift in Sources */,
 				4C09BFAC1F50E98200421EA7 /* GalleryViewController.swift in Sources */,
-				4C09BFB01F50E9AA00421EA7 /* PurposeViewController.swift in Sources */,
 				4C09BF931F4F4F6A00421EA7 /* AppDelegate.swift in Sources */,
 				4C09BF9B1F4F4F6A00421EA7 /* Lift4Life.xcdatamodeld in Sources */,
 				4C09BFAE1F50E99D00421EA7 /* ContactViewController.swift in Sources */,
