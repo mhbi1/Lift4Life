@@ -17,6 +17,7 @@ class BioViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Sets up swiping gesture to show/hide menu
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(ViewController.showMenuG(_:)))
         swipeRight.direction = UISwipeGestureRecognizerDirection.right
         self.view.addGestureRecognizer(swipeRight)
@@ -24,6 +25,11 @@ class BioViewController: UIViewController {
         let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(ViewController.showMenuG(_:)))
         swipeLeft.direction = UISwipeGestureRecognizerDirection.left
         self.view.addGestureRecognizer(swipeLeft)
+        
+        //Makes navigation bar translucent
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
     }
     
     //Swiping right toggles the menu and swiping left hides it
