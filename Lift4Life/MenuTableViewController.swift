@@ -10,6 +10,7 @@ import UIKit
 
 class MenuTableViewController: UITableViewController {
 
+    @IBOutlet var menuTable: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +36,21 @@ class MenuTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 7
+    }
+    
+    // segue will be called as a row of the table is selected
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       /*let selectedIndex: IndexPath = self.menuTable.indexPath(for: sender as! UITableViewCell)!
+        let destVC: UINavigationController = segue.destination as! UINavigationController
+       destVC.title = 
+        
+        if(segue.identifier == "toHome"){
+            
+        }
+        else if (segue.identifier == "toTeam"){
+            
+        }*/
+        
     }
 
     /*

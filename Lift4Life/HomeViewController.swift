@@ -18,8 +18,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Home"
-        
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(ViewController.showMenuG(_:)))
         swipeRight.direction = UISwipeGestureRecognizerDirection.right
         self.view.addGestureRecognizer(swipeRight)
