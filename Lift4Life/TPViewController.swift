@@ -35,16 +35,12 @@ class TPViewController: UIViewController {
         self.view.addGestureRecognizer(swipeLeft)
         
         // Sets the buttons to change when highlighted
-        
-        /*speedster.setBackgroundImage(#imageLiteral(resourceName: "tpButton2") , for: UIControlState.highlighted)
+        eliteAthlete.setBackgroundImage(#imageLiteral(resourceName: "tpButton2") , for: UIControlState.highlighted)
+        speedster.setBackgroundImage(#imageLiteral(resourceName: "tpButton2") , for: UIControlState.highlighted)
         prodigy.setBackgroundImage(#imageLiteral(resourceName: "tpButton2") , for: UIControlState.highlighted)
         FourthQuarter.setBackgroundImage(#imageLiteral(resourceName: "tpButton2") , for: UIControlState.highlighted)
         loneWolf.setBackgroundImage(#imageLiteral(resourceName: "tpButton2") , for: UIControlState.highlighted)
-        dreamTeam.setBackgroundImage(#imageLiteral(resourceName: "tpButton2") , for: UIControlState.highlighted)*/
-    }
-        
-    @IBAction func eliteAthletePressed(_ sender: UIButton) {
-        eliteAthlete.setBackgroundImage(#imageLiteral(resourceName: "tpButton2") , for: UIControlState.highlighted)
+        dreamTeam.setBackgroundImage(#imageLiteral(resourceName: "tpButton2") , for: UIControlState.highlighted)
     }
     
     //Swiping right toggles the menu and swiping left hides it
