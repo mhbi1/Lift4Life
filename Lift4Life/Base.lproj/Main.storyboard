@@ -487,6 +487,31 @@ Cg
                     <view key="view" contentMode="scaleToFill" id="2Ep-ea-1AI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CZf-jk-lUS">
+                                <rect key="frame" x="0.0" y="45" width="375" height="1486"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gallery 1" translatesAutoresizingMaskIntoConstraints="NO" id="Dm9-nv-mLn">
+                                        <rect key="frame" x="4" y="-43" width="367" height="185"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gallery 2" translatesAutoresizingMaskIntoConstraints="NO" id="kaw-Ef-asu">
+                                        <rect key="frame" x="4" y="150" width="367" height="189"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gallery 3" translatesAutoresizingMaskIntoConstraints="NO" id="r4o-wb-b5u">
+                                        <rect key="frame" x="8" y="347" width="184" height="259"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gallery 4" translatesAutoresizingMaskIntoConstraints="NO" id="N49-uN-1UJ">
+                                        <rect key="frame" x="197" y="347" width="170" height="245"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.23385945431472077" green="0.23385945431472077" blue="0.23385945431472077" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <connections>
@@ -512,7 +537,7 @@ Cg
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1876" y="1084"/>
+            <point key="canvasLocation" x="3821.5999999999999" y="359.37031484257875"/>
         </scene>
         <!--Contact View Controller-->
         <scene sceneID="itu-FR-ZiA">
@@ -526,32 +551,51 @@ Cg
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eIq-SN-aqU">
-                                <rect key="frame" x="55" y="147" width="240" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_8940" translatesAutoresizingMaskIntoConstraints="NO" id="fBL-3e-g8x">
+                                <rect key="frame" x="0.0" y="64" width="375" height="227"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Contact_Background" translatesAutoresizingMaskIntoConstraints="NO" id="HXG-Bq-gKy">
+                                <rect key="frame" x="0.0" y="284" width="375" height="383"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ebw-L3-JSR">
-                                <rect key="frame" x="55" y="232" width="240" height="30"/>
+                                <rect key="frame" x="55" y="390" width="240" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Message" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yyO-Mh-Y9b">
-                                <rect key="frame" x="55" y="324" width="240" height="128"/>
+                                <rect key="frame" x="55" y="443" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l4A-O3-cmg">
-                                <rect key="frame" x="249" y="482" width="46" height="30"/>
+                                <rect key="frame" x="249" y="579" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Send"/>
+                                <color key="backgroundColor" red="0.99607473611831665" green="0.99220293760299683" blue="0.99199241399765015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Send">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email: jmhlift4life@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIb-SG-Lt3">
+                                <rect key="frame" x="71" y="617" width="232" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eIq-SN-aqU">
+                                <rect key="frame" x="55" y="335" width="240" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -578,7 +622,7 @@ Cg
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1876" y="1817"/>
+            <point key="canvasLocation" x="1876" y="1150.9745127436283"/>
         </scene>
         <!--Team View Controller-->
         <scene sceneID="cqh-ZG-aAt">
@@ -823,7 +867,7 @@ Strength &amp; Conditioning Coach</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4jm-3M-ufP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="942" y="1146"/>
+            <point key="canvasLocation" x="2919" y="361"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ICh-qp-vhm">
@@ -841,12 +885,18 @@ Strength &amp; Conditioning Coach</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PMg-kg-7xb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="942" y="1817"/>
+            <point key="canvasLocation" x="942" y="1151"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Contact_Background" width="1058" height="748"/>
+        <image name="Gallery 1" width="1150" height="767"/>
+        <image name="Gallery 2" width="1150" height="767"/>
+        <image name="Gallery 3" width="1026" height="1600"/>
+        <image name="Gallery 4" width="1066" height="1600"/>
         <image name="Head shot" width="3276" height="5016"/>
         <image name="Home_Background" width="4096" height="2730"/>
+        <image name="IMG_8940" width="2400" height="2400"/>
         <image name="TP_background" width="2028" height="1424"/>
         <image name="logo" width="444" height="420"/>
         <image name="menu" width="22" height="22"/>

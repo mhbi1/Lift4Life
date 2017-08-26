@@ -30,6 +30,10 @@ class GalleryViewController: UIViewController {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
+        
+        /*let images = [#imageLiteral(resourceName: "Gallery 1"), #imageLiteral(resourceName: "Gallery 2") , #imageLiteral(resourceName: "Gallery 3"), #imageLiteral(resourceName: "Gallery 4"), #imageLiteral(resourceName: "Gallery 5"), #imageLiteral(resourceName: "Gallery 6"), #imageLiteral(resourceName: "Gallery 7"), #imageLiteral(resourceName: "Gallery 8"), #imageLiteral(resourceName: "Gallery 9"), #imageLiteral(resourceName: "Gallery 10")]
+        
+        let scroll: UIScrollView*/
     }
     
     //Swiping right toggles the menu and swiping left hides it
