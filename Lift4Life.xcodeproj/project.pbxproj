@@ -11,7 +11,6 @@
 		4C09BF951F4F4F6A00421EA7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C09BF941F4F4F6A00421EA7 /* HomeViewController.swift */; };
 		4C09BF981F4F4F6A00421EA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C09BF961F4F4F6A00421EA7 /* Main.storyboard */; };
 		4C09BF9B1F4F4F6A00421EA7 /* Lift4Life.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C09BF991F4F4F6A00421EA7 /* Lift4Life.xcdatamodeld */; };
-		4C09BF9D1F4F4F6A00421EA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C09BF9C1F4F4F6A00421EA7 /* Assets.xcassets */; };
 		4C09BFA01F4F4F6A00421EA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C09BF9E1F4F4F6A00421EA7 /* LaunchScreen.storyboard */; };
 		4C09BFAA1F50E91300421EA7 /* TPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C09BFA91F50E91300421EA7 /* TPViewController.swift */; };
 		4C09BFAC1F50E98200421EA7 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C09BFAB1F50E98200421EA7 /* GalleryViewController.swift */; };
@@ -19,6 +18,7 @@
 		4C09BFB21F50F9CC00421EA7 /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C09BFB11F50F9CC00421EA7 /* BioViewController.swift */; };
 		4C09BFB71F50FF8F00421EA7 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C09BFB61F50FF8F00421EA7 /* SWRevealViewController.m */; };
 		4C09BFBB1F512F9E00421EA7 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C09BFBA1F512F9E00421EA7 /* MenuTableViewController.swift */; };
+		4C122AB41F5175FB00E9C82A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C122AB31F5175FB00E9C82A /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,6 @@
 		4C09BF941F4F4F6A00421EA7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4C09BF971F4F4F6A00421EA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C09BF9A1F4F4F6A00421EA7 /* Lift4Life.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Lift4Life.xcdatamodel; sourceTree = "<group>"; };
-		4C09BF9C1F4F4F6A00421EA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C09BF9F1F4F4F6A00421EA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C09BFA11F4F4F6A00421EA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C09BFA91F50E91300421EA7 /* TPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +37,7 @@
 		4C09BFB51F50FF8F00421EA7 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		4C09BFB61F50FF8F00421EA7 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		4C09BFBA1F512F9E00421EA7 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		4C122AB31F5175FB00E9C82A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,12 +70,12 @@
 		4C09BF911F4F4F6A00421EA7 /* Lift4Life */ = {
 			isa = PBXGroup;
 			children = (
+				4C122AB31F5175FB00E9C82A /* Assets.xcassets */,
 				4C09BFB31F50FF5300421EA7 /* SWRevealViewController */,
 				4C09BFB11F50F9CC00421EA7 /* BioViewController.swift */,
 				4C09BF921F4F4F6A00421EA7 /* AppDelegate.swift */,
 				4C09BF941F4F4F6A00421EA7 /* HomeViewController.swift */,
 				4C09BF961F4F4F6A00421EA7 /* Main.storyboard */,
-				4C09BF9C1F4F4F6A00421EA7 /* Assets.xcassets */,
 				4C09BF9E1F4F4F6A00421EA7 /* LaunchScreen.storyboard */,
 				4C09BFA11F4F4F6A00421EA7 /* Info.plist */,
 				4C09BF991F4F4F6A00421EA7 /* Lift4Life.xcdatamodeld */,
@@ -159,7 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C09BFA01F4F4F6A00421EA7 /* LaunchScreen.storyboard in Resources */,
-				4C09BF9D1F4F4F6A00421EA7 /* Assets.xcassets in Resources */,
+				4C122AB41F5175FB00E9C82A /* Assets.xcassets in Resources */,
 				4C09BF981F4F4F6A00421EA7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,7 +303,7 @@
 		4C09BFA51F4F4F6A00421EA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon2;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDG;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = NWK4MVPF4Y;
 				INFOPLIST_FILE = Lift4Life/Info.plist;
@@ -319,7 +319,7 @@
 		4C09BFA61F4F4F6A00421EA7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon2;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDG;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = NWK4MVPF4Y;
 				INFOPLIST_FILE = Lift4Life/Info.plist;
@@ -350,6 +350,7 @@
 				4C09BFA61F4F4F6A00421EA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
