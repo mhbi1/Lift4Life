@@ -25,6 +25,8 @@ class TPViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = ""
+        
         //Sets up the swiping gestures to show/hide menu
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(ViewController.showMenuG(_:)))
         swipeRight.direction = UISwipeGestureRecognizerDirection.right
@@ -34,6 +36,11 @@ class TPViewController: UIViewController {
         swipeLeft.direction = UISwipeGestureRecognizerDirection.left
         self.view.addGestureRecognizer(swipeLeft)
         
+        //Makes navigation bar translucent
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        
         // Sets the buttons to change when highlighted
         eliteAthlete.setBackgroundImage(#imageLiteral(resourceName: "tpButton2") , for: UIControlState.highlighted)
         speedster.setBackgroundImage(#imageLiteral(resourceName: "tpButton2") , for: UIControlState.highlighted)
@@ -41,11 +48,6 @@ class TPViewController: UIViewController {
         FourthQuarter.setBackgroundImage(#imageLiteral(resourceName: "tpButton2") , for: UIControlState.highlighted)
         loneWolf.setBackgroundImage(#imageLiteral(resourceName: "tpButton2") , for: UIControlState.highlighted)
         dreamTeam.setBackgroundImage(#imageLiteral(resourceName: "tpButton2") , for: UIControlState.highlighted)
-        
-        //Makes navigation bar translucent
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.isTranslucent = true
     }
     
     //Swiping right toggles the menu and swiping left hides it

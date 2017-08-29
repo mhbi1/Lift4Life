@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import SafariServices
 
-class ContactViewController: UIViewController {
+class ContactViewController: UIViewController, SFSafariViewControllerDelegate {
 
     @IBOutlet weak var menuButton: UIBarButtonItem!
     @IBOutlet var swipeGesture: UISwipeGestureRecognizer!
+
     var toggle = true
     
     override func viewDidLoad() {
@@ -48,7 +50,62 @@ class ContactViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func handleInstagram(_ sender: UIButton) {
+        let urlString = "https://www.instagram.com/coach.javi.ii.13/"
+        
+        if let url = URL(string: urlString) {
+            let vc = SFSafariViewController(url: url)
+            vc.delegate = self
+            
+            present(vc, animated: true, completion: nil)
+        }
+    }
+   
+    @IBAction func handleTwitter(_ sender: UIButton) {
+        let urlString = "https://twitter.com/CoachJavi13"
+        
+        if let url = URL(string: urlString) {
+            let vc = SFSafariViewController(url: url)
+            vc.delegate = self
+            
+            present(vc, animated: true, completion: nil)
+        }
+    }
+    
+    @IBAction func handleFacebook(_ sender: UIButton) {
+        let urlString = "https://www.facebook.com/Lift4LifeOfficial/"
+        
+        if let url = URL(string: urlString) {
+            let vc = SFSafariViewController(url: url)
+            vc.delegate = self
+            
+            present(vc, animated: true, completion: nil)
+        }
+    }
 
+    @IBAction func handleYoutube(_ sender: UIButton) {
+        let urlString = "https://www.youtube.com/channel/UCe5vY5AoAD8Ky0lPJYEErCw"
+            
+        if let url = URL(string: urlString) {
+            let vc = SFSafariViewController(url: url)
+            vc.delegate = self
+            
+            present(vc, animated: true, completion: nil)
+        }
+    }
+    
+    
+    func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func safariViewController(_ controller: SFSafariViewController, didCompleteInitialLoad didLoadSuccessfully: Bool) {
+        if didLoadSuccessfully == false {
+            print("Page did not load!")
+            controller.dismiss(animated: true, completion: nil)
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
