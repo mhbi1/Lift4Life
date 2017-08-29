@@ -308,7 +308,7 @@
 				DEVELOPMENT_TEAM = NWK4MVPF4Y;
 				INFOPLIST_FILE = Lift4Life/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = L4L.Lift4Life;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lift4lifestrength.Lift4Life;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Lift4Life/Lift4Life-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -324,7 +324,7 @@
 				DEVELOPMENT_TEAM = NWK4MVPF4Y;
 				INFOPLIST_FILE = Lift4Life/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = L4L.Lift4Life;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lift4lifestrength.Lift4Life;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Lift4Life/Lift4Life-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
