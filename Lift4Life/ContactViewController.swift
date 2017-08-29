@@ -6,10 +6,12 @@
 //  Copyright © 2017 Life 4 Life: Strength & Conditioning LLC. All rights reserved.
 //
 
+import Foundation
 import UIKit
 import SafariServices
+import MessageUI
 
-class ContactViewController: UIViewController, SFSafariViewControllerDelegate {
+class ContactViewController: UIViewController, SFSafariViewControllerDelegate, MFMailComposeViewControllerDelegate {
 
     @IBOutlet weak var menuButton: UIBarButtonItem!
     @IBOutlet var swipeGesture: UISwipeGestureRecognizer!
@@ -48,6 +50,40 @@ class ContactViewController: UIViewController, SFSafariViewControllerDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func sendEmail(_ sender: UIButton) {
+        let mailComposeViewController = configuredMailComposeViewController()
+        if MFMailComposeViewController.canSendMail() {
+            self.present(mailComposeViewController, animated: true, completion: nil)
+        } else {
+            self.showSendMailErrorAlert()
+        }
+    }
+    
+    func configuredMailComposeViewController() -> MFMailComposeViewController {
+        let mailComposerVC = MFMailComposeViewController()
+        mailComposerVC.mailComposeDelegate = self
+        // Extremely important to set the --mailComposeDelegate-- property, NOT the --delegate-- property
+        
+        mailComposerVC.setToRecipients(["jmhlift4life@gmail.com"])
+        //mailComposerVC.setSubject("Sending you an in-app e-mail...")
+        //mailComposerVC.setMessageBody("Sending e-mail in-app is not so bad!", isHTML: false)
+        
+        return mailComposerVC
+    }
+    
+    func showSendMailErrorAlert() {
+        let sendMailErrorAlert = UIAlertController(title: "Could Not Send Email", message: "Your device could not send e-mail.  Please check e-mail configuration and try again.", preferredStyle: .alert)
+        sendMailErrorAlert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
+            NSLog("The \"OK\" alert occured.")
+        }))
+        self.present(sendMailErrorAlert, animated: true, completion: nil)
+    }
+    
+    // MARK: MFMailComposeViewControllerDelegate Method
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func handleInstagram(_ sender: UIButton) {
@@ -93,7 +129,6 @@ class ContactViewController: UIViewController, SFSafariViewControllerDelegate {
             present(vc, animated: true, completion: nil)
         }
     }
-    
     
     func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
         dismiss(animated: true, completion: nil)
