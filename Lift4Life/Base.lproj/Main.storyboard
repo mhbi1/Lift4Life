@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -338,7 +339,7 @@ Cg
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBH-AG-F21">
-                                <rect key="frame" x="149" y="337" width="156" height="67"/>
+                                <rect key="frame" x="149" y="337" width="163" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Something to Strive Toward Impacting Positively">
@@ -551,54 +552,87 @@ Cg
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_8940" translatesAutoresizingMaskIntoConstraints="NO" id="fBL-3e-g8x">
-                                <rect key="frame" x="0.0" y="64" width="375" height="227"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Contact_Background" translatesAutoresizingMaskIntoConstraints="NO" id="HXG-Bq-gKy">
+                                <rect key="frame" x="0.0" y="313" width="375" height="354"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Contact_Background" translatesAutoresizingMaskIntoConstraints="NO" id="HXG-Bq-gKy">
-                                <rect key="frame" x="0.0" y="284" width="375" height="383"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ebw-L3-JSR">
-                                <rect key="frame" x="55" y="390" width="240" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Message" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yyO-Mh-Y9b">
-                                <rect key="frame" x="55" y="443" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l4A-O3-cmg">
-                                <rect key="frame" x="249" y="579" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99607473611831665" green="0.99220293760299683" blue="0.99199241399765015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Send">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obB-y6-wJg">
+                                <rect key="frame" x="26" y="445" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="F3q-r3-VkO"/>
+                                    <constraint firstAttribute="height" constant="75" id="zAU-e0-liw"/>
+                                </constraints>
+                                <state key="normal" image="icons8-Instagram-512"/>
+                                <connections>
+                                    <action selector="handleInstagram:" destination="qZV-xg-JNZ" eventType="touchUpInside" id="RvE-r6-Wtk"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email: jmhlift4life@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIb-SG-Lt3">
-                                <rect key="frame" x="71" y="617" width="232" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UuM-48-WYw">
+                                <rect key="frame" x="109" y="445" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="nRV-bm-5l3"/>
+                                </constraints>
+                                <state key="normal" image="icons8-Twitter-528"/>
+                                <connections>
+                                    <action selector="handleTwitter:" destination="qZV-xg-JNZ" eventType="touchUpInside" id="hwg-rv-a3R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0v-3w-KWr">
+                                <rect key="frame" x="275" y="445" width="75" height="75"/>
+                                <state key="normal" image="icons8-YouTube-528"/>
+                                <connections>
+                                    <action selector="handleYoutube:" destination="qZV-xg-JNZ" eventType="touchUpInside" id="bwQ-xy-nLV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wk9-4c-bmz">
+                                <rect key="frame" x="192" y="445" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="Bz3-9q-hRP"/>
+                                </constraints>
+                                <state key="normal" image="icons8-Facebook-528"/>
+                                <connections>
+                                    <action selector="handleFacebook:" destination="qZV-xg-JNZ" eventType="touchUpInside" id="ogm-BF-Foh"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_8940" translatesAutoresizingMaskIntoConstraints="NO" id="fBL-3e-g8x">
+                                <rect key="frame" x="0.0" y="64" width="375" height="306"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email: jmhlift4life@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIb-SG-Lt3">
+                                <rect key="frame" x="42" y="546" width="291" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="FaH-yT-PfC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                 <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eIq-SN-aqU">
-                                <rect key="frame" x="55" y="335" width="240" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="UuM-48-WYw" firstAttribute="top" secondItem="Wk9-4c-bmz" secondAttribute="top" id="1wZ-09-qRP"/>
+                            <constraint firstItem="fIb-SG-Lt3" firstAttribute="top" secondItem="obB-y6-wJg" secondAttribute="bottom" constant="26" id="3CU-D1-LVW"/>
+                            <constraint firstItem="Wk9-4c-bmz" firstAttribute="bottom" secondItem="L0v-3w-KWr" secondAttribute="bottom" id="3ja-ci-h5b"/>
+                            <constraint firstItem="gxa-tR-uyO" firstAttribute="top" secondItem="fIb-SG-Lt3" secondAttribute="bottom" constant="95" id="5Na-MF-zr9"/>
+                            <constraint firstItem="obB-y6-wJg" firstAttribute="top" secondItem="fBL-3e-g8x" secondAttribute="bottom" constant="75" id="5dy-TN-v4c"/>
+                            <constraint firstAttribute="trailing" secondItem="fBL-3e-g8x" secondAttribute="trailing" id="5eZ-EF-Kyq"/>
+                            <constraint firstItem="fBL-3e-g8x" firstAttribute="top" secondItem="lxF-n8-Kno" secondAttribute="bottom" id="7nL-yG-lTw"/>
+                            <constraint firstItem="fBL-3e-g8x" firstAttribute="leading" secondItem="Fna-0O-bda" secondAttribute="leading" id="8Gt-54-0qd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="L0v-3w-KWr" secondAttribute="trailing" constant="9" id="CC2-y2-3at"/>
+                            <constraint firstItem="obB-y6-wJg" firstAttribute="top" secondItem="UuM-48-WYw" secondAttribute="top" id="CjI-sV-GLt"/>
+                            <constraint firstItem="obB-y6-wJg" firstAttribute="bottom" secondItem="UuM-48-WYw" secondAttribute="bottom" id="CnI-9T-DBj"/>
+                            <constraint firstItem="HXG-Bq-gKy" firstAttribute="top" secondItem="lxF-n8-Kno" secondAttribute="bottom" constant="249" id="DdT-xH-kji"/>
+                            <constraint firstItem="UuM-48-WYw" firstAttribute="bottom" secondItem="Wk9-4c-bmz" secondAttribute="bottom" id="GrZ-gy-f1m"/>
+                            <constraint firstItem="L0v-3w-KWr" firstAttribute="leading" secondItem="Wk9-4c-bmz" secondAttribute="trailing" constant="8" symbolic="YES" id="GsU-2z-ai7"/>
+                            <constraint firstItem="UuM-48-WYw" firstAttribute="leading" secondItem="obB-y6-wJg" secondAttribute="trailing" constant="8" symbolic="YES" id="Gxv-Mp-lvR"/>
+                            <constraint firstItem="Wk9-4c-bmz" firstAttribute="leading" secondItem="UuM-48-WYw" secondAttribute="trailing" constant="8" symbolic="YES" id="Mab-J8-lcB"/>
+                            <constraint firstItem="Wk9-4c-bmz" firstAttribute="top" secondItem="L0v-3w-KWr" secondAttribute="top" id="O17-lB-5T0"/>
+                            <constraint firstItem="fBL-3e-g8x" firstAttribute="leading" secondItem="HXG-Bq-gKy" secondAttribute="leading" id="T4b-ek-Sld"/>
+                            <constraint firstItem="fBL-3e-g8x" firstAttribute="trailing" secondItem="HXG-Bq-gKy" secondAttribute="trailing" id="VOk-OT-fk7"/>
+                            <constraint firstItem="fIb-SG-Lt3" firstAttribute="leading" secondItem="Fna-0O-bda" secondAttribute="leadingMargin" constant="26" id="Zq0-hi-Q1k"/>
+                            <constraint firstItem="obB-y6-wJg" firstAttribute="leading" secondItem="Fna-0O-bda" secondAttribute="leadingMargin" constant="10" id="hhy-dS-eoC"/>
+                            <constraint firstItem="HXG-Bq-gKy" firstAttribute="centerX" secondItem="fIb-SG-Lt3" secondAttribute="centerX" id="sPp-mT-CqT"/>
+                            <constraint firstItem="HXG-Bq-gKy" firstAttribute="bottom" secondItem="gxa-tR-uyO" secondAttribute="top" id="yqr-vg-T6d"/>
+                        </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="dyw-4g-6eU" appends="YES" id="10b-ti-4ic"/>
                         </connections>
@@ -636,9 +670,8 @@ Cg
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rW-oV-pP3">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rW-oV-pP3">
                                 <rect key="frame" x="75" y="353" width="249" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Javier Hernandez II
 COACH &amp; OWNER
 Strength &amp; Conditioning Coach</string>
@@ -646,21 +679,35 @@ Strength &amp; Conditioning Coach</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4b3-8A-4vU">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4b3-8A-4vU">
                                 <rect key="frame" x="22" y="446" width="331" height="171"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.86225843430000004" green="0.7229512334" blue="0.59602475170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="171" id="WoA-Ts-7TZ"/>
+                                </constraints>
                                 <string key="text">“This is my future and this is what I work toward every day. I WANT to continue as a strength and conditioning coach and influence the sports world immensely. I STRIVE to have a Strength and Conditioning organization that raises money toward cancer patients and other diseases overtime. I PUSH the athletes I coach to Lift and train, not just for themselves but to LIFT 4 LIFE.”</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Head shot" translatesAutoresizingMaskIntoConstraints="NO" id="B08-73-vwc" userLabel="Javi_face">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Head shot" translatesAutoresizingMaskIntoConstraints="NO" id="B08-73-vwc" userLabel="Javi_face">
                                 <rect key="frame" x="92" y="59" width="214" height="301"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.8622584342956543" green="0.72295123338699341" blue="0.59602475166320801" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="B08-73-vwc" firstAttribute="top" secondItem="cRX-7i-A5j" secondAttribute="topMargin" constant="59" id="2d2-o8-NrO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7rW-oV-pP3" secondAttribute="trailing" constant="35" id="3Pj-rE-77A"/>
+                            <constraint firstItem="4b3-8A-4vU" firstAttribute="leading" secondItem="cRX-7i-A5j" secondAttribute="leadingMargin" constant="6" id="8Zi-3F-fjC"/>
+                            <constraint firstItem="B08-73-vwc" firstAttribute="centerX" secondItem="7rW-oV-pP3" secondAttribute="centerX" id="9Eg-Xu-1Fw"/>
+                            <constraint firstItem="B08-73-vwc" firstAttribute="leading" secondItem="cRX-7i-A5j" secondAttribute="leadingMargin" constant="76" id="F10-pj-euB"/>
+                            <constraint firstItem="7rW-oV-pP3" firstAttribute="top" secondItem="Obg-KE-HdS" secondAttribute="bottom" constant="289" id="JKP-Ny-hkv"/>
+                            <constraint firstItem="dir-Vb-MEA" firstAttribute="top" secondItem="4b3-8A-4vU" secondAttribute="bottom" constant="50" id="Jrb-00-uRR"/>
+                            <constraint firstItem="4b3-8A-4vU" firstAttribute="top" secondItem="B08-73-vwc" secondAttribute="bottom" constant="86" id="jQ2-Fw-He6"/>
+                            <constraint firstItem="7rW-oV-pP3" firstAttribute="leading" secondItem="cRX-7i-A5j" secondAttribute="leadingMargin" constant="59" id="lqR-Wy-tv6"/>
+                            <constraint firstItem="dir-Vb-MEA" firstAttribute="top" secondItem="7rW-oV-pP3" secondAttribute="bottom" constant="219" id="sDC-4P-w44"/>
+                            <constraint firstItem="4b3-8A-4vU" firstAttribute="centerX" secondItem="cRX-7i-A5j" secondAttribute="centerX" id="xCM-SX-nMP"/>
+                        </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="tS1-jj-o5c" appends="YES" id="PzH-ga-6op"/>
                         </connections>
@@ -898,6 +945,10 @@ Strength &amp; Conditioning Coach</string>
         <image name="Home_Background" width="4096" height="2730"/>
         <image name="IMG_8940" width="2400" height="2400"/>
         <image name="TP_background" width="2028" height="1424"/>
+        <image name="icons8-Facebook-528" width="528" height="528"/>
+        <image name="icons8-Instagram-512" width="512" height="512"/>
+        <image name="icons8-Twitter-528" width="528" height="528"/>
+        <image name="icons8-YouTube-528" width="528" height="528"/>
         <image name="logo" width="444" height="420"/>
         <image name="menu" width="22" height="22"/>
         <image name="tpButton1" width="150" height="150"/>
