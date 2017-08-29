@@ -37,9 +37,12 @@ class TPViewController: UIViewController {
         self.view.addGestureRecognizer(swipeLeft)
         
         //Makes navigation bar translucent
+        //self.navigationController?.view.backgroundColor = .clear
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.view.backgroundColor = .clear
+
         
         // Sets the buttons to change when highlighted
         eliteAthlete.setBackgroundImage(#imageLiteral(resourceName: "tpButton2") , for: UIControlState.highlighted)

@@ -34,6 +34,7 @@ class ContactViewController: UIViewController, SFSafariViewControllerDelegate, M
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.view.backgroundColor = .clear
     }
     
     //Swiping right toggles the menu and swiping left hides it
@@ -67,8 +68,6 @@ class ContactViewController: UIViewController, SFSafariViewControllerDelegate, M
         // Extremely important to set the --mailComposeDelegate-- property, NOT the --delegate-- property
         
         mailComposerVC.setToRecipients(["jmhlift4life@gmail.com"])
-        //mailComposerVC.setSubject("Sending you an in-app e-mail...")
-        //mailComposerVC.setMessageBody("Sending e-mail in-app is not so bad!", isHTML: false)
         
         return mailComposerVC
     }
